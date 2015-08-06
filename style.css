@@ -50,7 +50,7 @@
 }
 .frontpage-container-small .fa-caret-right{
 	display: inline-block;
-	margin-right: 45%;
+	padding-right: 20px;
 	padding-left: 20px;
 	padding-top: 5px;
 	font-size: 30px; 
@@ -64,14 +64,14 @@
 }
 .frontpage-container-small.active .fa-caret-down{
 	display: inline-block;
-	margin-right: 45%;
-	padding-left: 20px;
+	padding-right: 20px;
+	padding-left: 15px;
 	padding-top: 5px;
 	font-size: 30px;
 }
 .tab-title{
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 30px;
 	text-align: center;
 }
 .clearfix:after {
