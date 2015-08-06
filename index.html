@@ -1,0 +1,83 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Test</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+		</script>
+
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$(".tab_content").hide();
+			$(".tab_content:first").show(); 
+
+			$(".tabs").click(function() {
+			$(".tabs").removeClass("active");
+			$(this).addClass("active");
+			$(".tab_content").hide();
+			var activeTab = $(this).attr("rel"); 
+			$("#"+activeTab).fadeIn(); 
+	});
+});
+
+</script> 
+
+	</head>
+	<body>
+	<div class="col-sm-4">
+		<div class="frontpage-container tabs active" rel="tab1">
+			<span class="tab-title">A</span>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="frontpage-container tabs" rel="tab2">
+			<span class="tab-title">B</span>
+		</div>
+	</div>
+	<div class="col-sm-4">	
+		<div class="frontpage-container tabs" rel="tab3">
+			<span class="tab-title">C</span>
+		</div>
+	</div>
+	<div class="col-xs-12 tab_container">
+		<div class="content-box clearfix">
+			<div class="col-xs-12">
+				<div class="frontpage-container-small tabs active" rel="tab1">
+					<i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i><span class="tab-title">A</span>
+				</div>
+			</div>
+			<div id="tab1" class="tab_content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue vehicula mi, quis auctor ex interdum ac. Curabitur feugiat eros aliquam congue auctor. Aliquam mattis neque dolor, eget sodales nisi sollicitudin at. Aenean interdum, mi ut vestibulum bibendum, odio nunc maximus lectus, sit amet congue nisi purus ac dolor. Nullam ut purus quis lorem imperdiet faucibus in sed lacus. Aliquam feugiat felis vitae lectus dignissim scelerisque. Nunc eu eros quis tellus porta vehicula. In vitae vulputate ante. Etiam elementum nunc quis nisl facilisis, eget elementum neque consequat. Integer malesuada, velit in rhoncus blandit, sem ipsum molestie magna, vitae egestas ex ligula et ligula. In malesuada diam vel fringilla convallis. Vestibulum molestie dolor lacus, quis volutpat metus venenatis vulputate. Sed tempor nulla accumsan nunc malesuada molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin felis ante, pretium nec diam bibendum, bibendum blandit metus.
+	
+				Sed lobortis varius posuere. Duis et metus dapibus, imperdiet mi eu, congue nibh. Cras et dictum lectus. Ut sed nunc nibh. Suspendisse convallis justo ante, eu pulvinar felis tincidunt egestas. Aenean at placerat felis, non condimentum augue. Ut sed gravida enim. Donec faucibus lorem viverra, fringilla dui non, euismod ligula. Vivamus ut dignissim orci. Sed sed pellentesque turpis.</p>
+			</div>
+			<div class="col-xs-12">
+				<div class="frontpage-container-small tabs" rel="tab2">
+					<i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i><span class="tab-title">B</span>
+				</div>
+			</div>
+			<div id="tab2" class="tab_content">
+				<p>Sed ultricies ante eget suscipit viverra. Praesent non mollis ex, ut lacinia libero. Ut semper ipsum a metus efficitur egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In congue, turpis sed porttitor facilisis, mi magna efficitur ligula, nec blandit tellus sapien vestibulum sapien. Aliquam fermentum consequat lectus, eget fermentum risus pellentesque ac. Vestibulum gravida risus nisl, quis congue massa laoreet ac. Morbi vulputate dui dignissim diam maximus, et vehicula est pulvinar. Nulla lacus ex, sagittis eget auctor ac, luctus a orci. Nulla magna lectus, dignissim vel malesuada vitae, ullamcorper eget elit. Quisque bibendum sem in lorem fringilla, nec elementum est faucibus.
+
+				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In volutpat sit amet ante convallis tincidunt. Sed vitae varius ipsum, a iaculis massa. Pellentesque et nunc pharetra, laoreet leo id, elementum enim. Aliquam eu neque vitae nibh ultricies facilisis. Fusce laoreet ullamcorper sapien et fringilla. Duis at magna orci. Curabitur vulputate cursus elementum. Morbi vel eros pulvinar, tincidunt ante ut, bibendum lacus. Morbi sed arcu quis metus ullamcorper mollis. Etiam ac aliquet mi.</p>
+			</div>
+			<div class="col-xs-12">
+				<div class="frontpage-container-small tabs" rel="tab3">
+					<i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i><span class="tab-title">C</span>
+				</div>
+			</div>
+			<div id="tab3" class="tab_content">
+				<p>Nulla luctus sapien quis lobortis rhoncus. Vivamus nec condimentum lectus. Ut in dapibus nisl. Morbi ultricies magna id hendrerit laoreet. Ut bibendum justo lectus, id consequat urna rhoncus pellentesque. Curabitur blandit augue sed nisi hendrerit rhoncus. Nulla dictum pulvinar turpis nec aliquam.
+		
+				Ut a iaculis magna. Sed at fringilla mauris. Quisque in auctor erat. Sed sed leo viverra, ornare turpis et, egestas diam. Duis at nulla eget nisi lacinia dignissim nec vitae mi. Vivamus lobortis auctor congue. Sed non tempor mi, id laoreet est.</p>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
